@@ -11,7 +11,7 @@ class Header extends HTMLElement {
           <h3>Babaloga</h3>
       </div>
       <menu>
-          <a href="home.html">
+          <a href="index.html">
               <li id="desktop-li">◧ Home ◨</li>
               <li id="mobile-li">◧ Home</li>
           </a>
