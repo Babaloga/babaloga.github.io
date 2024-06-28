@@ -1,33 +1,49 @@
 @charset "UTF-8";
 @font-face {
   font-family: Lexend;
-  src: url("../Lexend-VariableFont_wght.ttf");
+  src: url("../fonts/Lexend-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: Bitter;
-  src: url("../BITTER-REGULAR.TTF");
+  src: url("../fonts/BITTER-REGULAR.TTF");
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url("../fonts/BITTER-BOLD.TTF");
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: STV;
+  src: url("../fonts/STV5730A_Merged.ttf")
 }
 html, body {
     height: 100%;
     padding: 0;
     margin: 0;
     line-height: 2em;
-  
+    background-color: #000000;
+    /*background-image: linear-gradient(rgb(117, 77, 143), #a0577c, #FF9C71);*/
+    background-image: linear-gradient(#02001f, #0f002f,#4c2d61, #a0577c);
+    background-repeat:repeat-x;
+    background-attachment: fixed;
 }
 
 body {
     display: grid;
-    align-items: baseline;
-    grid-template-columns: 220px [content-start] 1fr [content-end];
-    margin-inline: auto;
+
+    --nav-max-width: 290px;
+    grid-template-columns: var(--nav-max-width) [content-start] 1fr [content-end];
+    
     color:white;
-    max-width: 1800px;
+    align-items: baseline;
+    max-width: 1700px;
+    margin-inline: auto;
     /*background-image: linear-gradient(#000000,#340D59, #511C62, #6F1542, #FF9C71);*/
-    /*background-color: #0b000f;*/
-    background-image: url("../canvas.png"), linear-gradient(#000000,#0f002f);
-    background-repeat:repeat-x;
-    background-attachment: fixed;
+    /*background-image: url("../images/canvas.png"), linear-gradient(#000000,#09001b,#1b0003,#fed081);*/
+
     font-family: "Bitter";
     font-weight: bold;
     font-size: medium;
@@ -36,14 +52,33 @@ body {
     --li-height: 40px;
   }
 
+  @media only screen and (min-width: 721px) {
   .nav {
+    background-color: black;
+    margin-left: -500px;
+    padding-left: 515px;
+    padding-right: 12px;
+  }
+  }
+
+  header-component {
     grid-column: 1/content-start;
-    margin: 50px 0px;
-    position: sticky;
+    max-width: var(--nav-max-width);
+    height: 100vh;
     align-self: start;
+    position:fixed;
+  }
+
+  .nav {
+
+    padding-top: 50px;
+    padding-right: 80px;
     top: 0rem;
     text-align: center;
     font-family: "Bitter";
+    background-color: black;
+    height: 100%;
+    /*border: 1px solid white;*/
   }
 
   .nav img {
@@ -57,12 +92,14 @@ body {
     padding: 0%;
     position:relative;
     /*background: -webkit-linear-gradient(#ffb64f, #FF9C71, #db4332,#96499c);*/
-    background: -webkit-linear-gradient(#FF9C71,#96499c);
+    background: linear-gradient(#fbaa63,#96499c);
+    background: -webkit-linear-gradient(#fbaa63,#96499c);
     -webkit-background-clip: text!important;
     background-clip: text!important;
   }
 
   .content {
+
     margin: 50px 20px 0px 20px;
     grid-area: "content";
     width: 90%;
@@ -72,6 +109,15 @@ body {
     margin-block-end: 0px;
     padding-inline: 5px;
     min-width: 200px;
+
+  }
+
+  h1
+  {
+    font-size:48pt;
+    font-weight: bold;
+    font-family: "Bitter";
+    text-align-last: center;
   }
 
   h2{
@@ -81,6 +127,29 @@ body {
   h3{
     line-height: 1;
   }
+/*
+  .content h1{
+    font-family: "STV";
+    background-color: #000000;
+    padding: 1pt 5pt 5pt 5pt;
+    background-clip:border-box;
+
+    text-align:center;
+  }
+*/
+  .content h2{
+    font-family: "STV";
+    background-color: #000000;
+    padding: 1pt 5pt 5pt 5pt;
+    /*width: fit-content;*/
+  }
+
+  .content h3{
+    font-family: "STV";
+    background-color: #000000;
+    padding: 1pt 5pt 5pt 5pt;
+    /*width: fit-content;*/
+  }
 
   p
   {
@@ -88,17 +157,33 @@ body {
     src: url("Lexend-VariableFont_wght.ttf") format('truetype');
     font-weight: normal;
     line-height: normal;
+    color:#e4dbd2;
   }
   
 
   .nav menu a
   {
     /*color: var(--link-color);*/
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
     text-decoration: none;
     text-decoration-line: none;
     text-decoration-thickness: initial;
     text-decoration-style: initial;
     text-decoration-color: initial;
+
+    /*-webkit-background-clip: text!important;*/
+    /*background-clip: text!important;*/
+    -webkit-text-fill-color: transparent;
+    margin:auto;
+
+    width:85%;
+    display: list-item;
+    z-index: 0;
+    /*position: relative;*/
+    text-align-last: justify;
+    font-family: "BITTER-BOLD.TTF", Bitter, monospace;
+    transition-duration: 1.8s;
   }
 
   .nav menu a:visited
@@ -106,27 +191,26 @@ body {
     color:var(--link-color-visited);
   }
 
-  li
+  #soundtracks-primary
   {
-    -webkit-background-clip: text!important;
-    background-clip: text!important;
-    -webkit-text-fill-color: transparent;
-    margin:auto;
+    display: flex;
+  }
 
-    width:15ch;
-    display: list-item;
-    z-index: 0;
-    position: relative;
-    text-align-last: justify;
-    font-family: "BITTER-BOLD.TTF", Bitter, monospace;
-    transition-duration: 1.8s;
+  #soundtracks-primary iframe
+  {
+    padding: 1%;
+  }
+
+  #soundtracks-secondary
+  {
+    display: flex;
   }
 
   #mobile-li{
     display:none;
   }
 
-  li:hover
+  .nav menu a:hover
   {
     width: 11ch;
     transition-duration: 0.1s;
@@ -194,7 +278,7 @@ body {
 
   .blogpost
   {
-    color:#e4dbd2;
+    
     background:#00000055;
     border:1px solid white;
     border-radius: 0px 0px 0px 0px;
@@ -224,14 +308,21 @@ body {
     }
 
     .nav
-    {
+    {      
       height: 10ch;
-      top:5px;
-      bottom:5px;
-      grid-column: 1/content-end;
-      display:flex;
+      padding-top:5px;
       width: 100%;
-      margin:auto;
+
+      display:flex;
+    }
+
+    header-component {
+      height: 10ch;
+      grid-column: 1/content-end;
+      margin-left: 0;
+      margin-right: 0;
+      position: sticky;
+      max-width: 100%;
     }
 
     .nav menu 
@@ -239,7 +330,6 @@ body {
       height: 100%;
       display: grid;
       width:15ch;
-      position: relative;
       margin-right: 2ch;
       margin-left: auto;
       margin-top:auto;
@@ -271,6 +361,8 @@ body {
       margin-left: 5px;
       text-align:left;
       display: grid;
+      margin-top: auto;
+      margin-bottom: auto;
     }
 
     #desktop-li{
@@ -286,6 +378,7 @@ body {
       vertical-align:bottom;
       font-size:large;
       margin-bottom: 0px;
+      vertical-align:baseline;
     }
 
     h3 {
@@ -304,5 +397,6 @@ body {
     .content
     {
       grid-column: 1/content-end;
+      display: flex;
     }
   }

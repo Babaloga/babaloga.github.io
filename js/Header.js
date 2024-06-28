@@ -5,25 +5,24 @@ class Header extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-      <img src="heart.png" alt="An anatomical heart made of computer cables">
+      <div class="nav">
+      <img src="images/heart.png" alt="An anatomical heart made of computer cables">
       <div id="nav-header">
           <h2>George Eltzroth</h2>
           <h3>Babaloga</h3>
       </div>
       <menu>
           <a href="index.html">
-              <li id="desktop-li">◧ Home ◨</li>
-              <li id="mobile-li">◧ Home</li>
+              ◧ Home ◨
           </a>
           <a href="games.html">
-              <li id="desktop-li">◭ Portfolio ◮</li>
-              <li id="mobile-li">◭ Portfolio</li>
+              ◭ Portfolio ◮
           </a>
           <a href="blog.html">
-              <li id="desktop-li">◐ Blog ◑</li>
-              <li id="mobile-li">◐ Blog</li>
+              ⬖ Blog ⬗
           </a>
       </menu>
+      </div>
       `;
     }
   }
