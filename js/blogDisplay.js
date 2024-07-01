@@ -27,7 +27,19 @@ class BlogFeed extends HTMLElement {
 
         var directoryElements = directory.array;
 
-        var fileContents = directoryElements.map(async(file) => await fetch(file).json());
+        var fileContents = directoryElements.map(async(file) => 
+            {
+                var promise = await fetch(file);
+
+                console.log(promise);
+
+                if (!promise.ok) {
+                    throw new Error
+                        (`HTTP error! Status: ${promise.status}`);
+                }
+
+                return promise.json();
+            });
 
         fileContents.forEach((file) => this.innerHTML += this.renderBlogPost((file)));
       }
