@@ -26,7 +26,7 @@ class BlogFeed extends HTMLElement {
         console.log(directory);
 
         var directoryElements = directory.array;
-/*
+
         for (let i = 0; i < directoryElements.length; i++) {
             var promise = await directoryElements[i];
             console.log(promise);
@@ -35,19 +35,22 @@ class BlogFeed extends HTMLElement {
                     (`HTTP error! Status: ${promise.status}`);
             }
 
-        } */
+            var content = await promise.json;
 
+            this.innerHTML += this.renderBlogPost(content);
+        } 
+/*
         var fileContents = directoryElements.map(async(file) => 
             {
                 var promise = await fetch(file);
 
                 console.log(promise);
-/*
+
                 if (!promise.ok) {
                     throw new Error
                         (`HTTP error! Status: ${promise.status}`);
                 }
-*/
+
                 var content = await promise.json;
 
                 console.log(content);
@@ -56,6 +59,7 @@ class BlogFeed extends HTMLElement {
             });
 
         fileContents.forEach((file) => this.innerHTML += this.renderBlogPost((file)));
+        */
       }
 
     renderBlogPost(object) {
