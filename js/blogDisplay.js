@@ -28,7 +28,7 @@ class BlogFeed extends HTMLElement {
         var directoryElements = directory.array;
 
         for (let i = 0; i < directoryElements.length; i++) {
-            var promise = await directoryElements[i];
+            var promise = await fetch(directoryElements[i]);
             console.log(promise);
 
             var content = await promise.json;
