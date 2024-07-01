@@ -23,6 +23,8 @@ class BlogFeed extends HTMLElement {
             return res.json();
         });
 
+        console.log(directory);
+
         var directoryElements = directory.array;
 
         var fileContents = directoryElements.map((file). fetch(file).then((res) => {
