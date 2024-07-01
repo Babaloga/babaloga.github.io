@@ -13,15 +13,15 @@ class BlogFeed extends HTMLElement {
         super();
       }
 
-    connectedCallback() {
-        var directory = (fetch("blog/DIRECTORY.json")
+    async connectedCallback() {
+        var directory = await fetch("blog/DIRECTORY.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        }));
+        });
 
         console.log(directory);
         console.log(directory.value);
