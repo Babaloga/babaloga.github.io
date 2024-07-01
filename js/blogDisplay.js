@@ -35,7 +35,7 @@ class BlogFeed extends HTMLElement {
             return res.json();
         }));
 
-        fileContents.forEach(this.innerHTML += this.renderBlogPost);
+        fileContents.forEach((file) => this.innerHTML += this.renderBlogPost((file)));
       }
 
     renderBlogPost(object) {
