@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <div class="nav">
-      <img src="images/heart.png" alt="An anatomical heart made of computer cables">
+      <img src="images/Heart.png" alt="An anatomical heart made of computer cables">
       <div id="nav-header">
           <h2>George Eltzroth</h2>
           <h3>Babaloga</h3>
