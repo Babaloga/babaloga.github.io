@@ -42,7 +42,7 @@ class BlogFeed extends HTMLElement {
         let blogTitle = object.title;
         let blogDate = object.date;
         let blogContent = object.content;
-        let blogDateFormatted = Date.parse(blogDate).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
+        let blogDateFormatted = new Date(Date.parse(blogDate)).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
 
         this.innerHTML += `
             <div class="blogpost" id="${blogDate}">
