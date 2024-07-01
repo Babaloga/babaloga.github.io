@@ -24,10 +24,10 @@ class BlogFeed extends HTMLElement {
         });
 
         console.log(directory);
-        
+
         var directoryElements = directory.array;
 
-        var fileContents = directoryElements.map((file). fetch(file).then((res) => {
+        var fileContents = directoryElements.map((file) => fetch(file).then((res) => {
             if (!res.ok) {
                 throw new Error
                     (`HTTP error! Status: ${res.status}`);
