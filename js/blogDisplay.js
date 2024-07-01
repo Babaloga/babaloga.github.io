@@ -30,10 +30,6 @@ class BlogFeed extends HTMLElement {
         for (let i = 0; i < directoryElements.length; i++) {
             var promise = await directoryElements[i];
             console.log(promise);
-            if (!promise.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${promise.status}`);
-            }
 
             var content = await promise.json;
 
