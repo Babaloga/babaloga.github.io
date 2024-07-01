@@ -74,7 +74,7 @@ class BlogFeed extends HTMLElement {
         return `
             <div class="blogpost" id="${blogDate}">
                 <h2>${blogTitle}</h2>
-                <h4>${blogDate}</h4>
+                <h4>${blogDateFormatted}</h4>
                 ${blogContent}    
             </div>
         `;
