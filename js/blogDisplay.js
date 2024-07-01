@@ -21,11 +21,14 @@ class BlogFeed extends HTMLElement {
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        })).body;
+        }));
 
         console.log(directory);
+        console.log(directory.value);
+        console.log(directory.body);
+        console.log(directory.text);
 
-        var directoryElements = directory.array;
+        var directoryElements = directory.value;
 
         var fileContents = directoryElements.map((file). fetch(file).then((res) => {
             if (!res.ok) {
