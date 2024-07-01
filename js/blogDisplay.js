@@ -1,5 +1,3 @@
-import fs from 'fs';
-
 class BlogPost extends HTMLElement {
 
     constructor(blogData) {
@@ -16,12 +14,24 @@ class BlogFeed extends HTMLElement {
       }
 
     connectedCallback() {
-        
-        var files = fs.readdirSync('/blog-posts/');
+        var directory = JSON.parse(fetch("blog/DIRECTORY.json")
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error
+                    (`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        }))
 
-        var fileContents = files.forEach(fs.readFile)
+        var fileContents = directory.map((file). fetch(file).then((res) => {
+            if (!res.ok) {
+                throw new Error
+                    (`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        }))
 
-        files.forEach(filecontents);
+        fileContents.forEach(this.renderBlogPost);
       }
 
     renderBlogPost(object) {
