@@ -37,7 +37,7 @@ class BlogFeed extends HTMLElement {
             
             console.log(promise);
 
-            this.innerHTML += this.renderBlogPost(promise);
+            this.innerHTML += promise;
         } 
 /*
         var fileContents = directoryElements.map(async(file) => 
