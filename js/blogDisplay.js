@@ -21,7 +21,7 @@ class BlogFeed extends HTMLElement {
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        })).value;
+        })).body;
 
         console.log(directory);
 
