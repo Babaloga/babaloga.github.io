@@ -48,7 +48,7 @@ class BlogFeed extends HTMLElement {
                         (`HTTP error! Status: ${promise.status}`);
                 }
 */
-                var content = (await promise).text;
+                var content = (await promise).json;
 
                 return content;
             });
