@@ -27,7 +27,7 @@ class BlogFeed extends HTMLElement {
 
         var directoryElements = directory.array;
 
-        var fileContents = directoryElements.map((file) => fetch(file).then((res) => {
+        var fileContents = directoryElements.map(async(file) => await fetch(file).then((res) => {
             if (!res.ok) {
                 throw new Error
                     (`HTTP error! Status: ${res.status}`);
