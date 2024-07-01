@@ -21,7 +21,7 @@ class BlogFeed extends HTMLElement {
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        }))
+        })).array;
 
         var fileContents = directory.map((file). fetch(file).then((res) => {
             if (!res.ok) {
@@ -29,7 +29,7 @@ class BlogFeed extends HTMLElement {
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        }))
+        }));
 
         fileContents.forEach(this.renderBlogPost);
       }
