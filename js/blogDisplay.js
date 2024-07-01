@@ -24,11 +24,8 @@ class BlogFeed extends HTMLElement {
         });
 
         console.log(directory);
-        console.log(directory.value);
-        console.log(directory.body);
-        console.log(directory.text);
-
-        var directoryElements = directory.value;
+        
+        var directoryElements = directory.array;
 
         var fileContents = directoryElements.map((file). fetch(file).then((res) => {
             if (!res.ok) {
