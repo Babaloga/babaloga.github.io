@@ -139,7 +139,8 @@ body {
 */
   .content h2{
     font-family: "STV";
-    background-color: #000000;
+    font-size: 24pt;
+    /*background-color: #000000;*/
     padding: 1pt 5pt 5pt 5pt;
     /*width: fit-content;*/
   }
