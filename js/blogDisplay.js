@@ -39,7 +39,7 @@ class BlogFeed extends HTMLElement {
 
         var fileContents = directoryElements.map(async(file) => 
             {
-                var promise = fetch(file);
+                var promise = await fetch(file);
 
                 console.log(promise);
 /*
@@ -48,7 +48,7 @@ class BlogFeed extends HTMLElement {
                         (`HTTP error! Status: ${promise.status}`);
                 }
 */
-                var content = (await promise).json;
+                var content = promise.json;
 
                 return content;
             });
