@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 class BlogPost extends HTMLElement {
 
     constructor(blogData) {
@@ -13,9 +15,8 @@ class BlogFeed extends HTMLElement {
         super();
       }
 
-        
     connectedCallback() {
-        var fs = require('fs');
+        
         var files = fs.readdirSync('/blog-posts/');
 
         var fileContents = files.forEach(fs.readFile)
