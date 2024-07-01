@@ -39,6 +39,8 @@ class BlogFeed extends HTMLElement {
       }
 
     renderBlogPost(object) {
+        console.log(object);
+
         let blogTitle = object.title;
         let blogDate = object.date;
         let blogContent = object.content;
