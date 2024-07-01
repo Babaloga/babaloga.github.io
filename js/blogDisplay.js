@@ -26,18 +26,28 @@ class BlogFeed extends HTMLElement {
         console.log(directory);
 
         var directoryElements = directory.array;
+/*
+        for (let i = 0; i < directoryElements.length; i++) {
+            var promise = await directoryElements[i];
+            console.log(promise);
+            if (!promise.ok) {
+                throw new Error
+                    (`HTTP error! Status: ${promise.status}`);
+            }
+
+        } */
 
         var fileContents = directoryElements.map(async(file) => 
             {
                 var promise = fetch(file);
 
                 console.log(promise);
-
+/*
                 if (!promise.ok) {
                     throw new Error
                         (`HTTP error! Status: ${promise.status}`);
                 }
-
+*/
                 var content = (await promise).text;
 
                 return content;
