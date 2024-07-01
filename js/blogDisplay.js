@@ -14,14 +14,14 @@ class BlogFeed extends HTMLElement {
       }
 
     connectedCallback() {
-        var directory = JSON.parse(fetch("blog/DIRECTORY.json")
+        var directory = fetch("blog/DIRECTORY.json")
         .then((res) => {
             if (!res.ok) {
                 throw new Error
                     (`HTTP error! Status: ${res.status}`);
             }
             return res.json();
-        })).array;
+        }).array;
 
         var fileContents = directory.map((file). fetch(file).then((res) => {
             if (!res.ok) {
