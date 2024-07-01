@@ -35,7 +35,7 @@ class BlogFeed extends HTMLElement {
             return res.json();
         }));
 
-        fileContents.forEach(this.renderBlogPost);
+        fileContents.forEach(this.innerHTML += this.renderBlogPost);
       }
 
     renderBlogPost(object) {
@@ -44,7 +44,7 @@ class BlogFeed extends HTMLElement {
         let blogContent = object.content;
         let blogDateFormatted = new Date(Date.parse(blogDate)).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
 
-        this.innerHTML += `
+        return `
             <div class="blogpost" id="${blogDate}">
                 <h2>${blogTitle}</h2>
                 <h4>${blogdateFormatted}</h4>
