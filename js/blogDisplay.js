@@ -23,8 +23,6 @@ class BlogFeed extends HTMLElement {
             return res.json();
         });
 
-        console.log(directory);
-
         var directoryElements = directory.array;
 
         for (let i = 0; i < directoryElements.length; i++) {
@@ -35,7 +33,6 @@ class BlogFeed extends HTMLElement {
                 return response.text();
             });
             
-            console.log(promise);
 
             this.innerHTML += promise;
         } 
@@ -63,8 +60,6 @@ class BlogFeed extends HTMLElement {
       }
 
     renderBlogPost(object) {
-        console.log("Render Blog Post:");
-        console.log(object)
 
         let blogTitle = object.title;
         let blogDate = object.date;

@@ -26,6 +26,8 @@ class Header extends HTMLElement {
       `;
     }
 }
-  
-  customElements.define('header-component', Header);
+
+import Freezeframe from 'freezeframe';
+new Freezeframe({trigger: click});
+customElements.define('header-component', Header);
   
