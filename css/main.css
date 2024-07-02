@@ -404,14 +404,10 @@ body {
 
   .blogpost img
   {
-    display: flex;
-    flex: 1;
-
+    width: 100%;
   }
 
   .blogpost video
   {
-    display: flex;
-    flex: 1;
-    
+    width: 100%;
   }
