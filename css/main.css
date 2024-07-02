@@ -401,3 +401,17 @@ body {
       display: flex;
     }
   }
+
+  .blogpost img
+  {
+    display: flex;
+    flex: 1;
+
+  }
+
+  .blogpost video
+  {
+    display: flex;
+    flex: 1;
+    
+  }
