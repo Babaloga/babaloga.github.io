@@ -11,7 +11,7 @@
     <p>This may have been a solvable problem but the bigger issue was that this method eliminated the effect of narrowing the angle of the LIDAR sweep to get more detail and range, which was one of the more interesting and unique features of the system as it existed in Unity. This is also likely a solvable problem, but at this point I decided that the original ring-of-cameras method might be less performant, but it was also more robust and easier to tweak and improve. So I dropped this new method and set about re-creating the method I’d used in Unity.</p>
     <h3 id="part-2-wow-debugging-shaders-looks-rad">Part 2: Wow, debugging shaders looks rad</h3>
     <p>At first porting the system to Godot is fairly straightforward. Instead of Render Textures they’re Subviewports but the broad strokes are the same. The first roadblock comes when it’s time to project the points back into the world. Unity made this easy, there was a built-in method to generate a dynamic mesh on the GPU, and several unique shader tools for converting between the various coordinate spaces involved in rendering.</p>
-    <video>
+    <video controls>
         <source src="..\images\blog videos\LIDAR4-V.mp4">
     </video>
     <div width="100%" style="display: flex;">
