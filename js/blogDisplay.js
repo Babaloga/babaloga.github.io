@@ -36,6 +36,8 @@ class BlogFeed extends HTMLElement {
 
             this.innerHTML += promise;
         } 
+
+        new Freezeframe({trigger: "click"});
 /*
         var fileContents = directoryElements.map(async(file) => 
             {
