@@ -1,0 +1,14 @@
+<div class="blogpost" id="2020-08-20">
+    <h2>Project Treadmill 2 (LIDAR 3)</h2>
+    <h4>August 20th, 2020</h4>
+    <p>I managed to greatly increase performance by removing the raycasting phase and replacing it with a series of cameras. These cameras apply a special shader to everything they render, writing the relative x, y, and z coordinates of each pixel in world space to that pixels r, g, and b values, then using the alpha channel as a depth map. This allows me to easily reconstruct the point cloud without ever sending data back to the CPU.</p>
+    <div width="100%" style="display: flex;">
+        <div style="display:block; width: 50%;"><img src="..\images\blog images\LIDAR3-1-1.png" style="display:block; min-width: 0; padding: 1pt; margin: auto;"><p style="text-align:center;">Color rendering showing relative X, Y, and Z</p></div>
+        <div style="display:block; width: 50%;"><img src="..\images\blog images\LIDAR3-1-2.png" style="display:block; min-width: 0; padding: 1pt; margin: auto;"><p style="text-align:center;">Alpha channel showing distance from the camera</p></div>
+    </div>
+    <p>To change the horizontal and vertical density of the points I just have to change the resolution of the render texture.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oM9T5wzhio?si=hOvUPlb16MiosCHi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>You can see in the video above that Unity's texture filtering initially caused stray points around the edges of objects, but that was easily solved by disabling all filters and anti-aliasing on the render textures.  This approach works beautifully for the most part, but there are still a few problems. Most prominent is that the points seem to be rendering at different brightness depending on their position on screen, and the borders between cameras create obvious lines out from the center.</p>
+    <img src="..\images\blog images\LIDAR3-2.png" style="min-width: 0; padding: 1pt;">
+    <p>I initially thought those radial lines were caused by two cameras overlapping by one pixel, but all of my attempts to fix that have either been unsuccessful or have left gaps between the cameras.</p>
+</div>
