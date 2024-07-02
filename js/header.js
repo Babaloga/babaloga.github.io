@@ -1,3 +1,5 @@
+import Freezeframe from 'freezeframe';
+
 class Header extends HTMLElement {
     constructor() {
       super();
@@ -27,7 +29,6 @@ class Header extends HTMLElement {
     }
 }
 
-import Freezeframe from 'freezeframe';
 new Freezeframe({trigger: click});
 customElements.define('header-component', Header);
   
