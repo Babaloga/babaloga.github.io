@@ -25,7 +25,11 @@ class Header extends HTMLElement {
       </div>
       `;
     }
-  }
+}
   
   customElements.define('header-component', Header);
+  
+  window.onload = function() {
+    Gifffer();
+  }
   
