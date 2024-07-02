@@ -411,3 +411,12 @@ body {
   {
     width: 100%;
   }
+
+  .static {
+    position:absolute;
+    background: white;
+  }
+  
+  .static:hover {
+    opacity:0;
+  }
