@@ -1,4 +1,4 @@
-import Freezeframe from '.\node_modules\freezeframe\dist\freezeframe.min.js';
+import Freezeframe from ".\node_modules\freezeframe\dist\freezeframe.min.js";
 
 class Header extends HTMLElement {
     constructor() {
