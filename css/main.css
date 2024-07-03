@@ -98,8 +98,8 @@ body {
     background-clip: text!important;
   }
 
-  .content {
-
+  .content 
+  {
     margin: 50px 20px 0px 20px;
     grid-area: "content";
     width: 90%;
@@ -112,12 +112,41 @@ body {
 
   }
 
+  .in-page-nav
+  {
+    grid-column: content-start/content-end;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    height: 20px;
+    text-align-last:justify;
+  }
+
+  .in-page-nav a
+  {
+    text-decoration: none;
+    color:#d2dbe4;
+    font-size:larger;
+    text-align: start;
+    vertical-align: text-top;
+    transition-duration: 0.5s;
+  }
+
+  .in-page-nav a:hover
+  {
+    text-decoration: none;
+    color:#e4dbd2;
+    font-size:x-large;
+
+  }
+
   h1
   {
     font-size:48pt;
     font-weight: bold;
     font-family: "Bitter";
     text-align-last: center;
+    text-wrap: nowrap;
   }
 
   h2{
@@ -150,6 +179,27 @@ body {
     background-color: #000000;
     padding: 1pt 5pt 5pt 5pt;
     /*width: fit-content;*/
+  }
+
+  .content h4{
+    font-family: "STV";
+    background-color: #000000;
+    line-height: 1;
+    padding: 1pt 5pt 5pt 5pt;
+    margin-bottom: 5px;
+    /*width: fit-content;*/
+  }
+
+  .content h5{
+    font-family: "STV";
+    background-color: #000000ff;
+    line-height: 1;
+    padding: 1pt 5pt 4pt 5pt;
+    width: fit-content;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0px;
   }
 
   p
@@ -274,7 +324,6 @@ body {
   .game-button img:hover
   {
     transition-duration: 0.2s;
-
   }
 
   .blogpost
@@ -419,4 +468,54 @@ body {
   
   .static:hover {
     opacity:0;
+  }
+
+  #player-logos-first
+  {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr 0.3fr;
+    grid-auto-flow: row dense;
+    /*grid-template-areas:
+      'text a b'
+      'c d e';*/
+  }
+
+  #player-logos-first figure
+  {
+    background-color: #00000055;
+    display:block;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+    align-items: start;
+  }
+
+  #player-logos-first *
+  {
+    max-width: 100%;
+  }
+
+  #player-logos
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row dense;
+    /*grid-template-areas:
+      'text a b'
+      'c d e';*/
+  }
+
+  #player-logos figure
+  {
+    background-color: #00000055;
+    display:block;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+    align-items: start;
+  }
+
+  #player-logos *
+  {
+    max-width: 100%;
   }
