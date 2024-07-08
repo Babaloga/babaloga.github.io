@@ -149,7 +149,7 @@ body {
   {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .column *
