@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Center of George-Eltzroth-Related Activity</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/mobile.css">
+        <script src="/js/header.js" type="module" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <div class="content" style="display:inline-block">
+            <img src="/images/orbital tilt/OrbitalTiltTitle.png" alt="Orbital Tilt" style="width: 50%; align-self: center; padding-left: 25%; padding-right: 25%; background: black;">
+            <h3>Roles&emsp;-&emsp;Design, Scripting, Music, UI</h3>
+            <p>
+                Made in Unity
+                <br/>Team Size: 2 (web prototype), 4 (release version)
+                <br/>&emsp;2016&emsp;(<a href="https://babaloga.itch.io/orbits">web prototype</a>)
+                <br/>&emsp;2018&emsp;(Xbox One Creators Collection, Windows Store)
+                <br/>&emsp;2023&emsp;(<a href="https://babaloga.itch.io/orbital-tilt">Full Version on Itch.io</a>)
+            </p>
+            <div style="display:block; max-width: 100%;">
+                <div id="overview">
+                    <img class="easy-image" src="\images\orbital tilt\OrbitalTiltGameplay1.jpg">
+                    <h4>Overview</h4>
+                    <ul>
+                        <li>Design and implementation of core mechanics, level mechanics, and powerups</li>
+                        <li>Design, art, and scripting for UI</li>
+                        <li>Creation of a custom physics system</li>
+                    </ul>
+                <p>Orbital Tilt is a local multiplayer space shooter based on realistic gravity and orbital dynamics. The player has no ability to rotate or strafe, they can only increase or decrease their velocity.</p>
+                <p>We started the project in 2016 as extra credit for a physics class. A browser-based version of that early build can be found at https://babaloga.itch.io/orbits.</p>    
+                <p>For the release version, I iterated on the original core mechanics by increasing the pace of the game and adding an outer boundary to the play area. In addition, we added pickups for the ships and expanded the roster of playable planets to five, each with its own astronomy-inspired twist on the base mechanics.</p>
+                </div>
+                <img class="easy-image"  src="\images\orbital tilt\OrbitalTiltGameplay2.jpg">
+                <div id="scripting">
+                    <h4>Scripting</h4>
+                    <p>All of the prediction lines in this game work by taking an initial mass and velocity and stepping it forward in time several frames.</p>
+                    <p>Originally the custom gravity interacted directly with Unity’s 2D physics, but the difference between the frame rate for Unity’s FixedUpdate and it’s built-in physics caused the trajectory prediction lines to be inconsistent and inaccurate. To fix this I built a simple physics system that ran on FixedUpdate, which ended up improving the performance of the game overall by cutting out unused physics calculations.</p>
+                    <img class="easy-image"  src="\images\orbital tilt\OrbitalTiltGameplay3.jpg">
+                </div>
+                <div id="music">
+                    <h4>Music</h4>
+                    <p>For the music that I wrote for Orbital Tilt see the Music section of the Portfolio page, or <a href="https://soundcloud.com/user-938810952/sets/orbital-tilt-ost">the album on soundcloud</a>.</p>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>

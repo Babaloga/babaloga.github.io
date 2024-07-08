@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Center of George-Eltzroth-Related Activity</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/mobile.css">
+        <script src="/js/header.js" type="module" defer></script>
+    </head>
+    <body>
+        <header-component></header-component>
+        <div class="content" style="display:inline-block">
+            <img src="/images/lonely skies/LonelySkiesTitle.png" alt="Orbital Tilt" style="width: 50%; align-self: center; padding:10px; padding-left: 25%; padding-right: 25%; background: #5566bbff;">
+            <h3>Roles&emsp;-&emsp;Design, Scripting, Music, UI</h3>
+            <p>
+                Made in Unity
+                <br/>Team Size: 12
+                <br/>2019 (<a href="https://store.steampowered.com/app/1073060/Lonely_Skies/">Steam</a>)
+            </p>
+                <div style="display:block; max-width: 100%;">
+                    <img class="easy-image"  src="\images\lonely skies\LonelySkiesGameplay2.png">
+                    <div id="overview">
+                        <h4>Overview</h4>
+                        <ul>
+                            <li>Created the original game pitch</li>
+                            <li>Worked closely with artists to develop the distinct visual style of each of the game’s three major environments</li>                      
+                            <li>Designed and built the game’s opening section</li>                           
+                            <li>Composed the original soundtrack</li>
+                            <li>Picked up various odd jobs in 3D modelling, sound design, and illustration</li>
+                        </ul>
+                        <p>Lonely Skies is my capstone game for the University of Utah. I originally pitched the game as focusing on the relationship between the player and their in-game vehicle, a run-down airship. The ship would act as a kind of puzzle, behaving in ways that might seem random, but that the player would grow to understand through interacting with it.</p>
+                        <p>The design evolved quite a bit over the course of development. We found that moving between ships was a lot more fun than moving around on one ship, so we refocused the game on stealing parts from other ships in order to keep your own ship running. We also removed the slow, clumsy ship combat, focusing instead on high-speed piloting challenges.</p>
+                        <img class="easy-image"  src="\images\lonely skies\LonelySkiesGameplay1.png">
+                    </div>
+                    
+                    <div id="scripting">
+                        <h4>Scripting</h4>
+                        <p>To facilitate the core dynamic of stealing pieces from other ships and adding them to your own, the ships themselves had to be modular, which was a problem for Unity’s physics. It was important to us that adding or removing a piece could change the balance and weight of a ship dramatically, but polling the ship every frame would be way too resource intensive. Instead, I created the Hierarchy Physics system, which piggybacked off of Unity’s scene hierarchy to allow for complex physics objects made up of multiple individual masses.</p>
+                        <p>The root of any airship has an active rigidbody with a weight and center of mass determined by all of its children. When any HierarchyPhysics object has its position in the hierarchy changed, it triggers a re-evaluation of both itself and its former parent. If any HierarchyPhysics object suddenly becomes the root of its own hierarchy, it enables its rigidbody and becomes a distinct physics object.</p>
+                        <p>This allowed the airships to be highly dynamic, with entire sections capable of being knocked off, and balance being a real concern when stealing engines for the player’s ship.</p>
+                        <img class="easy-image"  src="\images\lonely skies\LonelySkiesGameplay3.png">
+                        <p>Another scripting challenge this project presented was the wind. We needed the rotation of an object like a wing to affect how it interacted with the wind, and we wanted that wind affect to apply to the bodies of ships, not just wings and sails.</p>
+                        <p>My solution used a set of raycasts in the direction of the wind, which would find the surface normals and use the average to determine the direction and magnitude of the wind force to apply. The number of raycasts could be adjusted depending on how much precision was needed. The wings of the player ship had five, whereas many of the crates and cannonballs in the game only needed one.</p>
+                    </div>
+                    <img class="easy-image"  src="\images\lonely skies\LonelySkiesGameplay4.jpg">
+                    <div id="odd jobs">
+                        <h4>Odd Jobs</h4>
+                        <div style="display: grid; grid-template-columns: 50% 50%; grid-auto-flow: row; align-items: center; column-gap: 1%;">
+                            <img src="\images\lonely skies\LS_OddJobs.png">
+                            <img src="\images\lonely skies\LS_OddJobs2.png">
+                            <div style="width: 100%; height:100%; align-items:baseline;">
+                                <p>One of the modular pipe models that appears on the ship. These pipes and various other 3D models throughout the game were made by me when our 3D modelers were busy with more urgent tasks.</p>
+                            </div>
+                            <div style="width: 100%; height:100%;  align-items:baseline;">
+                                <p>I created this map in Photoshop to appear as a prop in the title screen. A version of it also appears in the pause screen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music">
+                        <h4>Music</h4>
+                        <p>For the music that I wrote for Lonely Skies see the Music section of the Portfolio page, or <a href="https://soundcloud.com/user-938810952/sets/lonely-skies">the album on soundcloud</a>.</p>
+                    </div>
+                </div>
+            
+        </div>  
+    </body>
+</html>

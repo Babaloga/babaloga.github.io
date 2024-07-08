@@ -10,13 +10,26 @@
         <title>Center of George-Eltzroth-Related Activity</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/header.js" type="module" defer></script>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/mobile.css">
+        <script src="/js/header.js" type="module" defer></script>
+        <script src="/js/blogThumbnailDisplay.js" type="module"></script> 
     </head>
     <body>
         <header-component></header-component>
         <div class="content" style="display:inline-block">
-            <h2>George Eltzroth is a game designer, musician, and artist.</h2> 
+            <h2>George Eltzroth is a game designer, musician, and artist</h2>
+            <h3>Currently based in the DC area</h3>
+            <div class="column-holder">
+                <div class="column">
+                    <p>Tumblr</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="column">
+                    <h3>Blog Posts</h3>
+                    <blog-thumb-feed></blog-thumb-feed>
+                </div>
+            </div>
         </div>  
     </body>
 </html>
