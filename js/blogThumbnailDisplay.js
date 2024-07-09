@@ -59,13 +59,16 @@ class BlogThumbFeed extends HTMLElement {
         let blogDateFormatted = new Date(Date.parse(blogDate)).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
 
         return `
-            <div class="blogpost-thumb" id="${blogDate}">
-                <a href="/blog/${blogDate}.html">
+        <div class="blogpost-thumb" id="${blogDate}" style="display:flex;">
+            <a href="/blogpost.html#${blogDate}" style="height: 100%; width: 100%; display:flex; flex-direction: row;">     
+                <div>
                     <h3>${blogTitle}</h3>
                     <h4>${blogDateFormatted}</h4>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
         `;
+
     }
 }
 
