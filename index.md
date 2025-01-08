@@ -33,10 +33,32 @@ layout: default
         }
         #socials a:hover
         {
-            border-bottom-width:30pt;
-            height: 90pt;
+            border-bottom-width:4pt;
+            height: 30pt;
             color:rgb(255, 186, 232);
             /*padding-bottom: 50pt;*/
+        }
+        #socials a:hover
+        {
+            animation:  shake 0.1s linear 0s infinite ;
+            /*padding-bottom: 50pt;*/
+        }
+        @keyframes shake{
+            0%{
+            transform: translate(0%)
+            }
+            25%{
+            transform: translate(0.5%, -0.5%);
+            }
+            50%{
+            transform: translate(-0.5%, 1%);
+            }
+            75%{
+            transform: translate(0.5%, -1%);
+            }
+            100%{
+            transform: translate(0%, 0.5%)
+            }
         }
     </style>
     <br/>
@@ -46,3 +68,20 @@ layout: default
     <a href="https://soundcloud.com/user-938810952">SoundCloud</a>
     <a href="https://www.linkedin.com/in/george-eltzroth-b03608161/">LinkedIn</a>
 </p>
+<div style="display:inline-flex; margin-top: 20pt; ">
+    <div style="display:block; vertical-align:top; width: auto; min-width: 40%; margin-right: 1%;">
+    <div style="padding: 1em; background-color: #000000">
+        <h4 style="padding-top: 0pt; margin-top: 0pt;">About Me:</h4>
+        <ul style="list-style-type: &quot;◐ &quot;;" >
+            <li>I play cello pretty well</li>
+            <li>I play recorder and mandocello kind of ok</li>
+            <li>I know a good jambalaya recipe</li>
+            <li>I like audiobooks and walking</li>
+        </ul>
+    </div>
+    </div>
+    <div style="display:block; vertical-align:top; width: auto; padding: 1em; background-color: #000000">
+        <h4 style="padding-top: 0pt; margin-top: 0pt;">Evita [Not George Eltzroth]</h4>
+        <img src="\images\home\Evita.jpg">
+    </div>
+</div>

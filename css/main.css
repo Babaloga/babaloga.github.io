@@ -24,9 +24,9 @@ html, body {
     padding: 0;
     margin: 0;
     line-height: 2em;
-    background-color: #000000;
+    background-color: #220b09;
     /*background-image: linear-gradient(rgb(117, 77, 143), #a0577c, #FF9C71);*/
-    background-image: linear-gradient(#02001f, #0f002f,#4c2d61, #8f476b);
+    background-image: linear-gradient(#110f27,  #60457e, #b17b8d,#e7d9cc);
     background-repeat:repeat-x;
     background-attachment: fixed;
 }
