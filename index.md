@@ -10,10 +10,7 @@ layout: default
         #socials a
         {
             border-style:solid;
-            border-top-width: 4pt;
-            border-bottom-width:4pt;
-            border-right-width: 4pt;
-            border-left-width: 4pt;
+            border-width: 5pt;
             background-color: #000000aa;
             text-decoration: none;
             width: 100pt;
@@ -27,44 +24,45 @@ layout: default
             line-height: 28pt;
             height: 30pt;
             font-family: STV;
-            transition-duration: 0.5s;
+            transition-duration: 0.2s;
             transition-timing-function: ease-out;
             color: #c184c9;
         }
         #socials a:hover
         {
-            border-bottom-width:4pt;
-            height: 30pt;
             color:rgb(255, 186, 232);
-            /*padding-bottom: 50pt;*/
+            transition-duration: 0.2s;
         }
-        #socials a:hover
+        /*#socials a:hover
         {
-            animation:  shake 0.1s linear 0s infinite ;
-            /*padding-bottom: 50pt;*/
+            animation:  shake 2s linear 0s infinite ;
+            padding-bottom: 50pt;
         }
         @keyframes shake{
             0%{
-            transform: translate(0%)
+            width: 100pt;
+            height: 30pt;
             }
             25%{
-            transform: translate(0.5%, -0.5%);
+                width: 110pt;
+                height: 25pt;
             }
             50%{
-            transform: translate(-0.5%, 1%);
+                width: 100pt;
+                height: 30pt;
             }
             75%{
-            transform: translate(0.5%, -1%);
+                width: 90pt;
+                height: 35pt;
             }
             100%{
-            transform: translate(0%, 0.5%)
+                width: 100pt;
+                height: 30pt;
             }
-        }
+        }*/
     </style>
     <br/>
-    <a href="https://www.tumblr.com/babaloga">Tumblr</a>
     <a href="https://babaloga.itch.io/">Itch.io</a>
-    <a href="http://crouton.net/">? ? ?</a>
     <a href="https://soundcloud.com/user-938810952">SoundCloud</a>
     <a href="https://www.linkedin.com/in/george-eltzroth-b03608161/">LinkedIn</a>
 </p>
