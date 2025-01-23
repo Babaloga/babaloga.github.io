@@ -25,7 +25,8 @@ layout: default
     <div id="smaller games">
         <h3 style="text-align-last: justify;">>>> Smaller&#8239;&#8239;Games</h3>
         <p><a href="/games/guys.html">Guys™ - 2023</a></p>  
-        <p><a href="/games/mini-glolf.html">Mini-Glolf - 2021</a></p>  
+        <p><a href="/games/mini-glolf.html">Mini-Glolf - 2021</a></p>
+        <p><a href="/games/the-painting.html">The Painting of Evie Ward - 2019</a></p>  
         <p><a href="/games/match-girl.html">Match Girl - 2018</a></p>
         <p><a href="/games/midnight-city.html">Midnight City - 2017</a></p>
     </div>
