@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Global Game Jam - Bubble Ball Bubble Bowl"
+---
+For this year's global game jam I went to an in-person event hosted by IGDA DC at George Mason University.
+
+Given the theme "Bubble" our early group of four landed on the idea of Bubble Soccer, where the twist is that multiple balls can be in play, and they can combine into a larger and higher-scoring ball. This pitch was popular enough that we ended up with 11 people on the team, and being that I was also trying to attend magfest at the same time, I happily took on a minor role on the project. My contributions mainly consisted of implementing image and sound assets, and a handful of visual effects. The wobble effect when a bubble, seal, or pufferfish collides with something was my work.
+
+Coordinating 11 people to make a game in only 48 hours is no small task, and given that challenge I think the game turned out very well.
+<iframe src="https://itch.io/embed/3270256" width="552" height="167" frameborder="0"><a href="https://sime-gaming-studios.itch.io/bubble-ball">Bubble Ball Bubble Bowl by Sime Gaming Studios, houraivictim</a></iframe>

@@ -26,9 +26,10 @@ html, body {
     line-height: 2em;
     background-color: #220b09;
     /*background-image: linear-gradient(rgb(117, 77, 143), #a0577c, #FF9C71);*/
-    background-image: linear-gradient(#110f27,  #60457e, #b17b8d,#e7d9cc);
+    background-image: linear-gradient(#110f27,  #60457e, #b17b8d,#c49a73);
     background-repeat:repeat-x;
     background-attachment: fixed;
+    
 }
 
 body {
@@ -52,6 +53,20 @@ body {
     --link-color: #cd4489;
     --link-color-visited: #FF9C71;
     --li-height: 40px;
+
+  }
+
+  .dot {
+    height: 0px;
+    width: 0px;
+    background-color: #ffffff55;
+    border-radius: 50%;
+    border-width:0.5px;
+    border-style: solid;
+    border-color:#FFFFFF55;
+    display: inline-block;
+    position: fixed;
+    z-index:0;
   }
 
   @media only screen and (min-width: 821px) 
@@ -91,6 +106,7 @@ body {
     max-width: var(--nav-max-width);
     margin-left: auto;
     /*border: 1px solid white;*/
+    z-index:1;
   }
 
   .nav img {
@@ -142,6 +158,7 @@ body {
     min-width: 200px;
     max-width: calc(var(--content-max-width) - 40px);
     --link-color-visited: #FF9C71;
+    z-index:1;
   }
 
   .content p a:link
