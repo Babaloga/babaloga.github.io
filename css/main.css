@@ -161,6 +161,11 @@ body {
     z-index:1;
   }
 
+  .content p
+  {
+    text-shadow: rgba(0, 0, 0, 1) 1px 0 20px;
+  }
+
   .content p a:link
   {
     color: #f3c59f;
