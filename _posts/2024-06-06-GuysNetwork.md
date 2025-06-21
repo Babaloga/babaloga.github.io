@@ -7,3 +7,7 @@ As a graphics-light, multiplayer-only game, Guys™ seems like a natural fit to 
 
 After working at it for a while I took a break and got around the issue entirely by hosting the game on Github Pages and telling people to backspace the "s" that their browsers were automatically adding after the "http" in the url, but that was obviously not an ideal solution so eventually I muddled through getting secure web sockets working.
 
+UPDATE - JUNE 14th 2024:
+
+TLS lies dead at my feet. I got an SSL certificate for my home server and got secure websockets working in Unity. Guys™ can now run in-browser from itch.io.
+
