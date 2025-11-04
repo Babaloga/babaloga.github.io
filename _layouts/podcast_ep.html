@@ -1,0 +1,31 @@
+---
+title: The Don't Listen To This Podcast
+---
+<script
+    src="https://app.rybbit.io/api/script.js"
+    data-site-id="e3c222a23625"
+    defer
+></script>
+<div class="blogpost" id="{{ page.title }}">
+    <h2>{{ page.title }}</h2>
+    <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
+    <div id="blog-nav">
+        {% if page.next != nil %}
+            <a href="{{page.next.url}}" style="margin-left: 0px; margin-right: auto;"><h3>&lt;&lt;&lt;next</h3></a>
+        {% endif %}
+
+        {% if page.previous != nil %}
+            <a href="{{page.previous.url}}"style="margin-right: 0px; margin-left: auto;"><h3>prev&gt;&gt;&gt;</h3></a>
+        {% endif %}
+    </div>
+    {{ content }}
+    <div id="blog-nav">
+        {% if page.next != nil %}
+            <a href="{{page.next.url}}" style="margin-left: 0px; margin-right: auto;"><h3>&lt;&lt;&lt;next</h3></a>
+        {% endif %}
+
+        {% if page.previous != nil %}
+            <a href="{{page.previous.url}}"style="margin-right: 0px; margin-left: auto;"><h3>prev&gt;&gt;&gt;</h3></a>
+        {% endif %}
+    </div>
+</div>
