@@ -33,14 +33,13 @@ layout: default
     <h1 style="text-align-last: justify;" id="music">Music ▿ ▿ ▿ ▿ ⧩</h1>
     <h3 style="text-align-last: justify;">>>> Soundtracks</h3>
     <div id = "soundtracks-primary">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2256958343&color=%23ff0000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" 
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843173648&color=%23060606&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-        <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843153092&color=%232a2a46&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
     <div id = "soundtracks-primary">
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843164420&color=%23161616&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843153092&color=%232a2a46&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843171878&color=%235a5062&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
