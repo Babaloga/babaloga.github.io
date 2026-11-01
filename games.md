@@ -6,11 +6,16 @@ layout: default
 <div class="in-page-nav">
     <a href="#games" style="padding: 5pt; min-width: 20pt;">Games</a>
     <a href="#music" style="padding: 5pt; min-width: 20pt;">Music</a>
-    <a href="#art" style="padding: 5pt; min-width: 20pt;">Art</a>
+    <!-- <a href="#art" style="padding: 5pt; min-width: 20pt;">Art</a>-->
 </div>
 <div style="display:inline-block; width: 100%; height: 100%;">
     <h1 style="text-align-last: justify;" id="games">⧨ ▿ ▿ ▿ ▿ Games</h1>
     <div id="game-page-wrapper">
+        <div id="game-button-wrapper">
+            <a href="/games/night-courier.html" class="game-button">
+                <img src="images/NightCourierButton.png" alt="Night Courier">
+            </a>
+        </div>
         <div id="game-button-wrapper">
             <a href="/games/orbital-tilt.html" class="game-button">
                 <img src="images/OrbitalTiltButton.png" alt="Orbital Tilt">
@@ -24,11 +29,13 @@ layout: default
     </div>
     <div id="smaller games">
         <h3 style="text-align-last: justify;">>>> Smaller&#8239;&#8239;Games</h3>
+        <p><a href="https://finlay-logan.itch.io/destination-in-4-miles">Destination in 4.0 Miles - 2026</a></p>  
+        <p><a href="https://finlay-logan.itch.io/save-our-summer">$ave Our Summer - 2026</a></p>  
         <p><a href="/games/guys.html">Guys™ - 2023</a></p>  
         <p><a href="/games/mini-glolf.html">Mini-Glolf - 2021</a></p>
         <p><a href="/games/the-painting.html">The Painting of Evie Ward - 2019</a></p>  
-        <p><a href="/games/match-girl.html">Match Girl - 2018</a></p>
-        <p><a href="/games/midnight-city.html">Midnight City - 2017</a></p>
+        <!--<p><a href="/games/match-girl.html">Match Girl - 2018</a></p>
+        <p><a href="/games/midnight-city.html">Midnight City - 2017</a></p>-->
     </div>
     <h1 style="text-align-last: justify;" id="music">Music ▿ ▿ ▿ ▿ ⧩</h1>
     <h3 style="text-align-last: justify;">>>> Soundtracks</h3>
@@ -43,7 +50,7 @@ layout: default
     <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1843171878&color=%235a5062&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </div>
-    <h1 style="text-align-last: justify;" id="art">⧨ ▿ ▿ ▿ ▿ Art</h1>
+    <!-- <h1 style="text-align-last: justify;" id="art">⧨ ▿ ▿ ▿ ▿ Art</h1>
     <h3>The Core Mechanics player logos</h3>
     <div id="player-logos" width = "100%">
         <div>
@@ -129,5 +136,6 @@ layout: default
             </figcaption>
         </figure>
     </div>
+    -->
 </div>
 <script src="" async defer></script>

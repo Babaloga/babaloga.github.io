@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+---
+title: Lonely Skies
+layout: default
+---
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Center of George-Eltzroth-Related Activity</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/mobile.css">
-        <script src="/js/header.js" type="module" defer></script>
-    </head>
-    <body>
-        <header-component></header-component>
-        <div class="content" style="display:inline-block">
             <img src="/images/lonely skies/LonelySkiesTitle.png" alt="Orbital Tilt" style="width: 50%; align-self: center; padding:10px; padding-left: 25%; padding-right: 25%;">
             <h3>Roles&emsp;-&emsp;Design, Scripting, Music, UI</h3>
             <p>
@@ -68,7 +55,4 @@
                         <p>For the music that I wrote for Lonely Skies see the Music section of the Portfolio page, or <a href="https://soundcloud.com/user-938810952/sets/lonely-skies">the album on soundcloud</a>.</p>
                     </div>
                 </div>
-            
-        </div>  
-    </body>
 </html>

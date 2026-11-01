@@ -148,7 +148,11 @@ body {
 
   .content 
   {
-    margin: 50px 20px 0px 20px;
+    background:rgba(0, 0, 0, 0.308);
+    border-width: 5px;
+    border-color: #FFFFFFFF;
+    margin: 10px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     grid-area: "content";
     width: calc(100% - 100px);
     height: calc(100% - 70px);
@@ -373,7 +377,7 @@ body {
   #game-button-wrapper{
 
     width: 50vmax;
-    height: 20vmax;
+    aspect-ratio: 4/3;
     margin: 10px;
     background: -webkit-linear-gradient(#FF9C71,#96499c);
   }
