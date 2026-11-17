@@ -3,7 +3,7 @@ title: Center of George-Eltzroth-Related Activity
 layout: default
 ---
 
-<h2>George Eltzroth is a game designer, musician, and artist</h2>
+<h2>George Eltzroth is a game designer and programmer</h2>
 <h3>Currently based in Brooklyn</h3>
 <p id="socials" style="text-align: justify; text-align-last: justify; display: flex;">
     <style>
@@ -71,11 +71,14 @@ layout: default
     <div style="padding: 1em; background-color: #000000">
         <h4 style="padding-top: 0pt; margin-top: 0pt;">About Me:</h4>
         <ul style="list-style-type: &quot;◐ &quot;;" >
-            <li>I play cello pretty well</li>
+            <li>I am a game designer focused on expressive systems and mechanics</li>
+            <li>I know a good jambalaya recipe</li>
+            <li>I am comfortable with C#, C++, and GDScript</li>
+            <!-- <li>I play cello pretty well</li>
             <li>I play recorder and mandocello kind of ok</li>
             <li>I know a good jambalaya recipe</li>
             <li>I like audiobooks and walking</li>
-            <li>I have made one OR MORE game(s)</li>
+            <li>I have made one OR MORE game(s)</li> -->
         </ul>
     </div>
     </div>

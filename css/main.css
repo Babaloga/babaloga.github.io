@@ -313,6 +313,7 @@ body {
       src: url("Lexend-VariableFont_wght.ttf") format('truetype');
       font-weight: normal;
       line-height: normal;
+      margin-bottom: 5pt;
       color:#e4dbd2;
   }
 

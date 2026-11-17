@@ -17,7 +17,7 @@ class Header extends HTMLElement {
                 ◧&#8239; Home &#8239;◨
             </a>
             <a href="/games.html">
-                ◭&#8239; Portfolio &#8239;◮
+                ◭&#8239; Games &#8239;◮
             </a>
             <a href="/blog.html">
                 ◐&#8239; Blog &#8239;◑
