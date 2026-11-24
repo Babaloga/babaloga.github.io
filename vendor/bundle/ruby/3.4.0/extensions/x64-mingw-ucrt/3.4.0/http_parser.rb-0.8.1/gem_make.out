@@ -1,0 +1,20 @@
+current directory: C:/Users/georg/Documents/babaloga.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+C:/Ruby34-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/georg/Documents/babaloga.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261124-7568-bkrtoa sitelibdir\=./.gem.20261124-7568-bkrtoa clean
+
+current directory: C:/Users/georg/Documents/babaloga.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261124-7568-bkrtoa sitelibdir\=./.gem.20261124-7568-bkrtoa
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: C:/Users/georg/Documents/babaloga.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261124-7568-bkrtoa sitelibdir\=./.gem.20261124-7568-bkrtoa install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20261124-7568-bkrtoa
+
+current directory: C:/Users/georg/Documents/babaloga.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20261124-7568-bkrtoa sitelibdir\=./.gem.20261124-7568-bkrtoa clean

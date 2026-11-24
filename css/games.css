@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#minor-game-holder
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+#minor-game
+{
+    height: 200px; 
+    width: 160px;
+    margin: 5px;
+    text-align: center; 
+    background-color: #000000; 
+    padding: 10px;
+    align-content: center;
+}
+
+#minor-game img 
+{
+    height: 65%;
+    object-fit: cover;
+}

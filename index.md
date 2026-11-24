@@ -82,8 +82,8 @@ layout: default
         </ul>
     </div>
     </div>
-    <div style="display:block; vertical-align:top; width: auto; padding: 1em; background-color: #000000">
-        <h4 style="padding-top: 0pt; margin-top: 0pt;">Evita [Not George Eltzroth]</h4>
-        <img src="\images\home\Evita.jpg">
+    <div style="align-content: start; vertical-align:top; width: auto; height: auto; padding: 1em; background-color: #000000">
+        <h4 style="padding-top: 0pt; margin-top: 0pt; width: auto;">Evita [Not George Eltzroth]</h4>
+        <img style="object-position: top; object-fit: scale-down; height: auto; max-height: 50vh; width: auto;" src="\images\home\Evita.jpg">
     </div>
 </div>
